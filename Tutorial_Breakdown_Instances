@@ -1,0 +1,26 @@
+This text documents the breakdowns and times the writer ran into a wall attempting to walk through the Django tutorial on a cloud9 platform
+
+The tutorial:  https://docs.djangoproject.com/en/1.9/intro/tutorial01/
+
+1.  python manage.py runserver
+  - This was the first command that gave me trouble.  After trying to run this, I was to open my web browser and go to
+  http://127.0.0.1:8000/  However, after pasting the link in the browser, it failed to open the page.  At least an hour was spent     
+  attempting to debug this situation.  
+  
+  -Solution+++++++++++++++++++
+  under the readme file when I started the django tutorial it tells you that, incase you want to run django in the terminal to 
+   $ python manage.py runserver $IP:$PORT
+   This worked, I clicked the link provided and then was able to see the html page mentioned in the tutorial.  
+   
+2.  The next issue came in writing the first view to the django app.  There were several instructions about how to write new python
+  files and to link those files up to eachtother.  Once again you were told to run this command:  python manage.py runserver
+  So I wised up and ran the command that worked the last time: python manage.py runserver $IP:$PORT   however this time after attempting
+  to open the page, it now was a broken link.  So another long spurt of attempting to debug.  Finally, it was careful reading of the 
+  instructions that I realized you simply weren't opening the same page, but opening an extension of that page..
+  http://localhost:8000/polls/     
+  That /polls had to be added to the linked URL given by the command line.  Case two solved.  
+  
+3.  The next big issue was getting the database setup.  Again, we had to modify a python file, and then edit a python settings file. 
+  I swear I had copy pasted every command and bit of code correctly but I was not getting my results to match the tutorial's output.  
+  Finally, something happened, though I'm unsure of what, the code worked and vuahlah, I got the desired response.  It is unclear to
+  me exactly what solved this issue.  
