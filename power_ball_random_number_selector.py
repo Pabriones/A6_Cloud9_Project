@@ -7,8 +7,4 @@ def P_Ball():
 
 print('Your Lucky Power Ball Numbers are',P_Ball())
 
-##def five_ball(n):
-##    F = P_Ball() * n
-##    return F
-##
-##print(five_ball(5))
+
