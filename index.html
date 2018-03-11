@@ -58,7 +58,7 @@ Let’s get started by creating a Cloud9 account:
 <li> At the bottom of your new Cloud 9 workspace is a tab that says bash which is followed by so other text.  Click into this and type the following:
   django-admin startproject project  .  You can name your project whatever you'd like.  The name of your project will take the place of 'project' in the given command.  You have now created the template of you Django and Python application. 
 </li>
-<img src="images/step_2.png" alt="new Cloud9 workspace screenshot">
+<img src="images/step_2.PNG" alt="new Cloud9 workspace screenshot">
 <li>
 On the left hand side of you cloud 9 screen is a file directory of your workspace files.  When you created a project in the last step a new set of files were created under the directory of the name you gave your project. Navigate into the directory of the project you just created with the command line.  Type the following command and then execute it: python manage.py startapp helloWorld  
 </li>
@@ -68,7 +68,7 @@ On the left hand side of you cloud 9 screen is a file directory of your workspac
 def index(request):
     return HttpResponse("Hello, world.")
 </li>	
-<img src="images/step_3.png" alt="Python Code Screenshot">
+<img src="images/step_3.PNG" alt="Python Code Screenshot">
 <li>
 in the same directory as the views.py file you just modified create a new file called urls.py. and type the following code into that new file.  from django.conf.urls import url
 
@@ -78,7 +78,7 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
 ]
 </li>
-<img src="images/step_4.png" alt="URLS.PY code Screenshot">
+<img src="images/step_4.PNG" alt="URLS.PY code Screenshot">
 <li>
 Back in you project folder, the one the was created when you executed your first command prompt line, open up the urls.py file.  Delete whatever code is in the file and copy paste the following code into the file.  from django.conf.urls import include, url
 from django.contrib import admin
@@ -88,7 +88,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 ]
 </li>
-<img src="images/step_5.png" alt="URLS.PY code Screenshot">
+<img src="images/step_5.PNG" alt="URLS.PY code Screenshot">
 <li>
 Now, in your command prompt, make sure you are in the directory of your project and type the following command: python manage.py runserver $IP:$PORT  .  A link is generated at the end of text given in your command prompt window.  Go to the link in a web browser.  A page should be up with a red button in the middle of the screen that says open App.  open the app.  In the web browser add the following lines of text  /helloWorld.  And refresh your browser.  You should be sent to the page and web app you created on the cloud 9 workspace.  Congrats!  You've just created a Python Django web application.  
 </li>
