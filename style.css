@@ -30,7 +30,7 @@ footer {
     border-bottom: dotted gray;
     border-radius: 30px;
     font-family: Arial;
-    color: lightyellow;
+    color: black;
     margin-top: 25px;
 }
 
@@ -40,7 +40,7 @@ footer li {
     text-align: center;
     list-style-type: none;
     font-size: 1.1em;
-    display:inline; 
+    display:inline;
 }
 
 </style>
